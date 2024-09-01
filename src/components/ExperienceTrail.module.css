@@ -1,0 +1,40 @@
+.container__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+.container__header-left {
+  width: 30%;
+  font-size: 2rem;
+  text-align: left;
+  color: #1374c4;
+}
+
+.container__header-right {
+  width: 65%;
+  display: flex;
+  align-items: center;
+}
+
+.container__header-right > p {
+  font-size: 0.8rem;
+  text-align: left;
+}
+
+.button-container {
+  flex: 1 0;
+  align-self: flex-end;
+  display: flex;
+}
+
+.button-container > button:not(:last-child) {
+  margin-right: 10px;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}

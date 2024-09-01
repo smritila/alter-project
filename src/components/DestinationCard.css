@@ -1,0 +1,70 @@
+.destination-card {
+  position: relative;
+  cursor: pointer;
+}
+
+.destination-image-container {
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.destination-card:hover .destination-image-container {
+  opacity: 0.3;
+}
+
+.destination-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.destination-content {
+  padding: 20px;
+  position: relative;
+}
+
+.destination-title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.absolute-positioned {
+  z-index: 10;
+  position: absolute; /* Position the child absolutely */
+  top: 50%; /* Move the child down 50% of the parent's height */
+  left: 50%; /* Move the child right 50% of the parent's width */
+  transform: translate(
+    -50%,
+    -50%
+  ); /* Shift it back by 50% of its own width and height */
+  text-align: center; /* Center text inside the child */
+}
+
+.destination-card:hover .destination-title {
+  color: #ee7c00;
+}
+
+.destination-description {
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.destination-metric {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background-color: #ff4081;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.destination-arrow {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 1.2rem;
+  color: #ff6f00;
+}
